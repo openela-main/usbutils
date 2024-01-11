@@ -1,6 +1,6 @@
 Name:    usbutils
-Version: 013
-Release: 4%{?dist}
+Version: 015
+Release: 1%{?dist}
 Summary: Linux USB utilities
 URL:     http://www.linux-usb.org/
 License: GPLv2+
@@ -43,6 +43,10 @@ rm -rf %{buildroot}/%{_libdir}/pkgconfig/usbutils.pc
 %{_bindir}/*
 
 %changelog
+* Tue Feb 28 2023 Pavel Šimovec <psimovec@redhat.com> - 015-1
+- Update to 015
+  Resolves: rhbz#2111403
+
 * Tue Aug 10 2021 Mohan Boddu <mboddu@redhat.com> - 013-4
 - Rebuilt for IMA sigs, glibc 2.34, aarch64 flags
   Related: rhbz#1991688
