@@ -1,5 +1,5 @@
 Name:    usbutils
-Version: 015
+Version: 017
 Release: 1%{?dist}
 Summary: Linux USB utilities
 URL:     http://www.linux-usb.org/
@@ -43,6 +43,10 @@ rm -rf %{buildroot}/%{_libdir}/pkgconfig/usbutils.pc
 %{_bindir}/*
 
 %changelog
+* Sun Feb 04 2024 Pavel Simovec <psimovec@redhat.com> - 017-1
+- Update to 017
+  Resolves: RHEL-23148
+
 * Tue Feb 28 2023 Pavel Šimovec <psimovec@redhat.com> - 015-1
 - Update to 015
   Resolves: rhbz#2111403
